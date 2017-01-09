@@ -3,7 +3,18 @@ C# Scripts
 
 Author: Arno0x0x - [@Arno0x0x](https://twitter.com/Arno0x0x)
 
-This repository aims at publishing some of my C# scripts. Most are just forked/inspired from other scripts I found there and there, and I adapted to fit my needs or just to learn and improve.
+This repository aims at publishing some of my C# scripts. Some are just forked/inspired from other scripts I found there and there, and I adapted to fit my needs or just to learn and improve.
+
+Dynamically load and parse a .Net assembly
+----------------
+
+**parseAssembly.cs**
+
+This console application will dynamically load a .Net assembly (exe or dll), either from a local file or downloaded from a URL, optionnaly base64 encoded. Once loaded, it will enumerate it's types, method and properties.
+Examples:
+`parseAssembly.exe myAssembly.dll`
+or
+`parseAssembly.exe http://some.site.com/myAssembly base64`
 
 
 Playing with PE and Shellcode reflective injection

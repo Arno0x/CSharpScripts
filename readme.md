@@ -5,6 +5,16 @@ Author: Arno0x0x - [@Arno0x0x](https://twitter.com/Arno0x0x)
 
 This repository aims at publishing some of my C# scripts. Some are just forked/inspired from other scripts I found there and there, and I adapted to fit my needs or just to learn and improve.
 
+Decrypt via brute force (bf), then load and execute, an xor encrypted shellcode
+----------------
+
+**bfDecryptShellcode.cs**
+
+This script is a little dumb and probably not very useful PoC of a brute force decrypting of a multibyte XOR encrypted shellcode. Once the shellcode is decrypted, it is loaded into memory and executed.
+
+The multibyte XOR encrypted shellcode can be obtained by generating a metasploit raw payload, and then encrypt it with the shellcode_encoder.py script available here: [ShellcodeWrapper](https://github.com/Arno0x/ShellcodeWrapper).
+
+
 Dynamically load and parse a .Net assembly
 ----------------
 

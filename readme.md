@@ -12,7 +12,11 @@ Decrypt via brute force (bf), then load and execute, an xor encrypted shellcode
 
 This script is a little dumb and probably not very useful PoC of a brute force decrypting of a multibyte XOR encrypted shellcode. Once the shellcode is decrypted, it is loaded into memory and executed.
 
-The multibyte XOR encrypted shellcode can be obtained by generating a metasploit raw payload, and then encrypt it with the shellcode_encoder.py script available here: [ShellcodeWrapper](https://github.com/Arno0x/ShellcodeWrapper).
+To use it, you need two things:
+1. An multibyte XOR encrypted shellcode
+2. The MD5 hash of the decrypted payload which serves as a marker for knowning that the right decryption key has been found
+
+You can obtain both by using my [ShellcodeWrapper](https://github.com/Arno0x/ShellcodeWrapper) project and feed it with any **raw** metasploit payload.
 
 
 Dynamically load and parse a .Net assembly

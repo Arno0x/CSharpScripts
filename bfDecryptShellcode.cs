@@ -41,8 +41,12 @@ namespace BFDecryptShellcode
 		public static byte[] encryptedShellcode = new byte[] { XOR ENCRYPTED SHELLCODE HERE };
 		// <<<< ----------------------------------- >>>>>
 		
+		// <<<< ----------------------------------- >>>>>
+		// PUT THE TARGET MD5 HERE
 		// The target (decrypted) shellcode MD5 hash. This is used to tell that the key was found
-		public static byte[] shellcodeMD5 = StringToByteArray("faf683e125b1efe47f9ec51ae334fa05");
+		public static byte[] shellcodeMD5 = StringToByteArray("target_md5_digest");
+		// <<<< ----------------------------------- >>>>>
+
 		
 		// The charset to be used for brute forcing the XOR key
 		//public static string charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
